@@ -19,8 +19,7 @@ body {
     border-radius: 15px;
     border: 2px solid #000;
 
-    overflow: hidden;
-    padding-bottom: 30px;;
+    padding-bottom: 30px;
 }
 
 header {
@@ -28,7 +27,13 @@ header {
     padding: 20px;
 
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+header h2 {
+    margin-left: 65%;
+    margin-right: 50px;
 }
 
 .logo {
@@ -79,7 +84,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    position: relative;
 }
 
 .hero-image img {
@@ -91,8 +96,10 @@ nav a:hover {
 
 .hero-bottom {
     position: absolute;
-    width: 62%;
-    top: 55.8%;
+    width: 100%;
+    left: 0;
+    top: 78%;
+    box-sizing: border-box;
     background-color: rgba(0, 0, 0, .5);
 
     text-align: center;
@@ -104,8 +111,10 @@ nav a:hover {
     margin-top: 20px;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+}
+
+.main-content p {
+    font-size: 17px;
 }
 
 .content p {
@@ -149,8 +158,9 @@ footer {
     background-color: #dadada;
     width: auto;
     height: 70px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     line-height: 3;
+    margin-top: 30px;
 }
